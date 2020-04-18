@@ -4,7 +4,7 @@ using UnityEditor;
 namespace UniActiveTilemapAutoChanger
 {
 	[InitializeOnLoad]
-	public static class ActiveTilemapAutoChanger
+	internal static class ActiveTilemapAutoChanger
 	{
 		static ActiveTilemapAutoChanger()
 		{
