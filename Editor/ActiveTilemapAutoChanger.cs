@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using UnityEditor;
 
-namespace KoganeUnityLib
+namespace UniActiveTilemapAutoChanger
 {
 	[InitializeOnLoad]
 	public static class ActiveTilemapAutoChanger
