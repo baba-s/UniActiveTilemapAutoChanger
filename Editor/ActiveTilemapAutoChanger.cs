@@ -15,6 +15,9 @@ namespace UniActiveTilemapAutoChanger
 		{
 			var assembly = typeof( AssetDatabase ).Assembly;
 			var type     = assembly.GetType( "UnityEditor.GridPaintingState" );
+
+			if ( type == null ) return;
+
 			var property = type.GetProperty( "scenePaintTarget", BindingFlags.Public | BindingFlags.Static );
 
 			property.SetValue( type, Selection.activeGameObject );
